@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.app-wrapper {
+    width: 100%;
+    height: 100vh;
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .65);
+    animation: appear 2s forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.search {
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px 2px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgba(255, 255, 255, .25);
+    transition: all .5s;
+}
+
+.search::placeholder {
+    color: rgba(255, 255, 255, .4);
+}
+
+.search:hover, .search:focus {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-shadow: 3px 5px 8px rgba(0, 0, 0, .8);
+}
+
+.location-city, .location-date {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+
+.location-date {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 5px 8px rgba(0, 0, 0, .8);
+}
+
+.temperature-degree {
+    font-size: 60px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.temperature-descrip, .temperature-minmax, .humidity {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.temperature-minmax {
+    font-weight: 500;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: right;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: .9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-right: 2px;
+
+}
